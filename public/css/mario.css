@@ -7,4 +7,59 @@ html, body {
 
 .grass, .sky, .road {
     position: relative;
+    width: 100%;
+}
+
+.sky {
+    box-sizing: border-box;
+    background: lightblue;
+    height: 40%;
+}
+
+.grass {
+    background: seagreen;
+    height: 30%;
+}
+
+.road {
+    background: dimgrey;
+    height: 40%;
+    box-sizing: border-box;
+    position: absolute;
+}
+
+.line {
+    box-sizing: border-box;
+    height: 0;
+    border: 5px dashed #fff;
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+.mario {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    /* animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite; */
+}
+
+.luigi {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    /* animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    transform: rotateY(180deg);
+    animation-direction: reverse; */
+}
+
+@keyframes drive {
+    from{ transform: translateX(-150px) }
+    to{ transform: translateX(1500px) }
 }
